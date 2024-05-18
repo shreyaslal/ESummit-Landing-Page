@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ESummit'24</title>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_package_v0.16/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_package_v0.16/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_package_v0.16/favicon-16x16.png">
+  <link rel="manifest" href="./assets/favicon_package_v0.16/site.webmanifest">
+  <link rel="mask-icon" href="./assets/favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+  <script src="./assets/js/rateUsModal.js" defer></script>
+
+</head>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="./assets/js/faq.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="assets/css/test-style.css">
+
+<!-- Preloader CSS-->
+<link rel="stylesheet" href="assets/css/preloader.css">
+<script src="./assets/js/preloader.js" defer></script>
+
+<body >
+  <div id="preloader">
+    <div id="loader"></div>
+</div>
+  <header class="header header-anim" data-header>
+    <div class="container">
+<a href="#home" onclick="lenis.scrollTo('#home');" class="logo" style="display:flex;">
+    <img src="./assets/images/LogoPicLight.png" alt="" class="logopic" style=" width: 66px;"/>
+</a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#home" onclick="lenis.scrollTo('#home')" class="navbar-link" data-nav-link><i
+                class="ri-home-fill"></i> Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#benefits" onclick="lenis.scrollTo('#benefits')" class="navbar-link" data-nav-link><i
+                class="ri-bar-chart-fill"></i> Benefits</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#genre" onclick="lenis.scrollTo('#genre')" class="navbar-link" data-nav-link><i
+                class="ri-bar-chart-fill"></i> Genre</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#chapters" onclick="lenis.scrollTo('#chapters')" class="navbar-link" data-nav-link><i
+                class="ri-medal-fill"></i> Literary Realms</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#pricing" onclick="lenis.scrollTo('#pricing')" class="navbar-link" data-nav-link><i
+                class="ri-price-tag-3-fill"></i> Pricing</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" onclick="lenis.scrollTo('#contact')" class="navbar-link" data-nav-link><i
+                class="ri-customer-service-2-fill"></i> Contact</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" onclick="openRateUsModal(); return false;" class="navbar-link">Rate Us</a>
+          </li>
+
+          <li class="navbar-item" id="login-signup-link">
+            <a href="./assets/html/login.html" class="navbar-link">Login/Signup</a>
+</li>
+
+<li class="navbar-item" id="login-signup-link">
+    <a href="./assets/html/addremovebook.html" class="navbar-link">Your Booklist for Swapping</a>
+    </li>
+
+<li>
+    <div class="switch-container">
+        <input type="checkbox" id="switch" class="switch-checkbox">
+        <label for="switch" class="switch-label">
+            <div class="switch-button">
+                <span class="material-icons sun-icon">wb_sunny</span>
+                <span class="material-icons moon-icon">brightness_2</span>
+            </div>
+        </label>
+    </div>
+</li>
+</ul>
+</nav>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true" class="open"></ion-icon>
+
+        <ion-icon name="close-outline" aria-hidden="true" class="close"></ion-icon>
+      </button>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+
+    <!-- Rate Us Modal Pop up -->
+    <div class="rate-us-modal-wrapper">
+      <div class="rate-us-modal">
+        <a onclick="closeRateUsModal()" class="home_button"></a>
+        <h1 class="rating_heading">Rate Us</h1>
+        <div class="star_rating">
+          <p>How was your experience?</p>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <button class="star">&#9734;</button>
+          <p class="current_rating"> 0 of 5</p>
+        </div>
+        <button id="submit_rating" class="submit_button">Submit Rating</button>
+      </div>
+    </div>
+
+    <article>
+
+
+      <!-- Book Exchange Hub -->
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle"> Let's Exchange Old Books and Discover New Stories Together!</p>
+
+            <h1 class="h1 hero-title">ESummit</h1>.com - Where Books Find New Adventures!</h1>
+
+            <p class="section-text">
+              Join ESummit'24.com, the ultimate online community for book enthusiasts! Create your profile, list your
+              favorite reads, and embark on literary journeys by swapping books with fellow passionate readers. Discover
+              a world where books find new adventures and readers connect through the joy of sharing stories.
+            </p>
+
+          </div>
+
+          <div class="hero-banner has-before" data-tilt="">
+            <img src="./assets/images/hero-banner.png" width="431" height="596"
+              alt="things i never said, a novel by claudia wilson" class="w-100">
+
+            <button class="play-btn" aria-label="play video" onclick="window.location.href='#'">
+              <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BENEFITS
+      -->
+
+      <section class="section benefits" id="benefits" aria-label="benefits">
+        <div class="container">
+
+          <div class="grid-list">
+
+            <li class="benefits-content">
+              <h2 class="h2 section-title">Unleash the Magic of Book Swapping!</h2>
+
+              <p class="section-text">"ESummit'24.com - Where Every Book is a Portal to a New Adventure!"</p>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="./assets/images/benefits-1.svg" width="40" height="40" loading="lazy" alt="Experience">
+                </div>
+
+                <h3 class="h3 card-title">Diverse Literary Adventures</h3>
+
+                <p class="card-text">
+                  Explore a vast array of genres and titles by exchanging books with our diverse community, opening
+                  doors to new and exciting literary adventures.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span readmore-anim">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="./assets/images/benefits-2.svg" width="40" height="40" loading="lazy" alt="Motivation">
+                </div>
+
+                <h3 class="h3 card-title">Cost-Efficient Reading</h3>
+
+                <p class="card-text">
+                  Save money on your reading habit by swapping books instead of purchasing new ones, making your reading
+                  journey more economical and sustainable.
+                </p>
+                <br>
+
+                <a href="#" class="btn-link">
+                  <span class="span readmore-anim">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="./assets/images/benefits-3.svg" width="40" height="40" loading="lazy" alt="Goals">
+                </div>
+
+                <h3 class="h3 card-title">Connect with Like-Minded Readers</h3>
+
+                <p class="card-text">
+                  Build meaningful connections with fellow book enthusiasts, sharing recommendations, insights, and
+                  forming a community bonded by a love for literature.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span readmore-anim">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="./assets/images/benefits-4.svg" width="40" height="40" loading="lazy" alt="Vision">
+                </div>
+
+                <h3 class="h3 card-title">Revitalize Your Bookshelf</h3>
+
+                <p class="card-text">
+                  Keep your home library fresh and dynamic by constantly swapping books, ensuring a rotating collection
+                  that reflects your evolving tastes and interests.
+                </p>
+                <br>
+
+                <a href="#" class="btn-link">
+                  <span class="span readmore-anim">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="./assets/images/benefits-5.svg" width="40" height="40" loading="lazy" alt="Mission">
+                </div>
+
+                <h3 class="h3 card-title">Environmental Impact</h3>
+
+                <p class="card-text">
+                  Contribute to eco-friendly practices by participating in book swaps, reducing the demand for new
+                  prints and promoting a greener approach to reading.
+                </p>
+                <br>
+
+                <a href="#" class="btn-link">
+                  <span class="span readmore-anim">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="benefits-card has-before has-after">
+
+                <div class="card-icon">
+                  <img src="./assets/images/benefits-6.svg" width="40" height="40" loading="lazy" alt="Strategy">
+                </div>
+
+                <h3 class="h3 card-title">Personalized Reading Experience</h3>
+
+                <p class="card-text">
+                  Tailor your reading list to your preferences by selecting books from other users' collections,
+                  creating a personalized and curated reading experience that suits you.
+                </p>
+
+                <a href="#" class="btn-link">
+                  <span class="span readmore-anim">Read more</span>
+
+                  <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- Genre -->
+
+<section class="genre" id="genre">
+  <div class="container">
+
+    <p class="section-subtitle">Genre</p>
+
+    <h2 class="h2 section-title has-underline">
+      Explore Different Genres
+      <span class="span has-before"></span>
+    </h2>
+
+    <ul class="grid-list">
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">01</p>
+
+          <h3 class="h3 card-title">Classic Literature</h3>
+
+          <p class="card-text">
+            The category of classic literature contains literature that is worthy of being read through the ages. Classic literature is timeless and well-written. Sophocles,Charles Dickens, Jane Austen and Virgil are all writers whose works are considered classical literature.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">02</p>
+
+          <h3 class="h3 card-title">Romance</h3>
+
+          <p class="card-text">
+            a romance is understood to be "love stories", that are primarily focused on the relationship between the main characters of the story.The biggest defining characteristic of the romance genre is that a happy ending is always guaranteed, perhaps living "happily ever after".
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">03</p>
+
+          <h3 class="h3 card-title">Suspense Thriller</h3>
+
+          <p class="card-text">
+            Readers are taken on a rollercoaster ride of tension and intrigue. These gripping tales are filled with twists and turns, keeping readers guessing until the very last page as protagonists navigate dangerous situations.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">04</p>
+
+          <h3 class="h3 card-title">Science Fiction</h3>
+
+          <p class="card-text">
+            Embarking on voyages across the cosmos and exploring the possibilities of future technology, science fiction books ignite the imagination with visions of advanced civilizations, space exploration, and speculative science.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">05</p>
+
+          <h3 class="h3 card-title">Fantasy</h3>
+
+          <p class="card-text">
+            Immersed in magical realms and mythical creatures, fantasy books transport readers to worlds where anything is possible, weaving tales of epic quests, ancient prophecies, and battles between good and evil.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">06</p>
+
+          <h3 class="h3 card-title">Horror</h3>
+
+          <p class="card-text">
+            Sending shivers down readers' spines, horror books delve into the macabre and the supernatural, exploring fear, dread, and the unknown through chilling tales of monsters, ghosts, and psychological terror.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">07</p>
+
+          <h3 class="h3 card-title">Biography</h3>
+
+          <p class="card-text">
+            Providing insight into real lives and experiences, biography books recount the journeys, triumphs, and struggles of notable individuals, offering inspiration and understanding through their personal stories and achievements.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">08</p>
+
+          <h3 class="h3 card-title">Self Help</h3>
+
+          <p class="card-text">
+            Empowering readers to improve their lives and well-being, self-help books offer practical advice, strategies, and insights for personal growth, happiness, and success, covering topics such as relationships, productivity, and mental health.
+          </p>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="chapter-card">
+
+          <p class="card-subtitle">09</p>
+
+          <h3 class="h3 card-title">Historical Fiction</h3>
+
+          <p class="card-text">
+            Offering a glimpse into the past, historical fiction books blend real events with fictional narratives, transporting readers to different eras and cultures, bringing history to life through vivid characters and immersive storytelling.
+          </p>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+
+      <!-- 
+        - #CHAPTERS
+      -->
+
+      <section class="section chapters" id="chapters">
+        <div class="container">
+
+          <p class="section-subtitle">Literary Realms</p>
+
+          <h2 class="h2 section-title has-underline">
+            Literary Realms we've covered
+            <span class="span has-before"></span>
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">01</p>
+
+                <h3 class="h3 card-title">Romantic Escapes</h3>
+
+                <p class="card-text">
+                  Immerse yourself in the enchanting world of love and passion with our curated selection of romance
+                  fiction.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">02</p>
+
+                <h3 class="h3 card-title">Thrilling Adventures</h3>
+
+                <p class="card-text">
+                  Dive into heart-pounding tales and gripping narratives that will keep you on the edge of your seat.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">03</p>
+
+                <h3 class="h3 card-title">Mindful Living</h3>
+
+                <p class="card-text">
+                  Discover the secrets to a fulfilling life with our collection of insightful and empowering self-help
+                  books.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">04</p>
+
+                <h3 class="h3 card-title">Mystical Fantasies</h3>
+
+                <p class="card-text">
+                  Embark on fantastical journeys to magical realms with our captivating fantasy fiction picks.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">05</p>
+
+                <h3 class="h3 card-title">Historical Chronicles</h3>
+
+                <p class="card-text">
+                  Travel back in time and explore the rich tapestry of history through our curated historical fiction
+                  selection.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">06</p>
+
+                <h3 class="h3 card-title">Science Fiction Wonders</h3>
+
+                <p class="card-text">
+                  Ignite your imagination with mind-bending concepts and futuristic worlds in our science fiction.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">07</p>
+
+                <h3 class="h3 card-title">Laugh Out Loud Comedy</h3>
+
+                <p class="card-text">
+                  Find joy and laughter in our comedy section, featuring witty and humorous tales that will brighten
+                  your day.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">08</p>
+
+                <h3 class="h3 card-title">Intriguing Mysteries</h3>
+
+                <p class="card-text">
+                  Unravel gripping mysteries and suspenseful plots that will keep you guessing until the last page.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="chapter-card">
+
+                <p class="card-subtitle">09</p>
+
+                <h3 class="h3 card-title">Inspiring Biographies</h3>
+
+                <p class="card-text">
+                  Gain insights into the lives of remarkable individuals through our collection of inspiring biographies
+                  and memoirs.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- Exchange Exchnage Exchange -->
+      <section class="section preview" aria-label="preview">
+        <div class="container1">
+
+          <h2 class="h2 section-title has-underline">
+
+            Book Exchange Hub
+            <span class="span has-before"></span>
+          </h2>
+
+          <p class="section-text">
+            Connect with fellow readers in our Book Exchange Hub. Sell your old books at half price and give your
+            favorite reads a new home. Fill out the form below to get started!
+          </p>
+
+          <div class="exchange-form">
+
+            <div class="form-fields">
+
+              <label class="form-label" for="bookTitle">Book Title:</label>
+              <input type="text" id="bookTitle" name="bookTitle" placeholder="Enter the title of your book" required
+                class="input-field">
+
+              <label class="form-label" for="bookAuthor">Author:</label>
+              <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Enter the author's name" required
+                class="input-field">
+
+              <label class="form-label" for="yourPrice">Your Price (50% Off):</label>
+              <div class="currency-container">
+                <label class="currency-label" for="currency">Currency:</label>
+                <select id="currency" name="currency" class="input-field currency-select">
+                  <option value="INR">INR</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                </select>
+              </div>
+              <input type="number" min="0" id="yourPrice" name="yourPrice"
+                placeholder="Enter your desired selling price" required class="input-field">
+
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="validateAndConnect()">Connect with a Reader</button>
+          </div>
+
+
+        </div>
+      </section>
+      <!-- 
+        - #PRICING
+      -->
+      <section class="section pricing" id="pricing" aria-label="pricing">
+        <div class="container">
+
+          <p class="section-subtitle">Pricing</p>
+
+          <h2 class="h2 section-title has-underline">
+            Pricing based on their version
+            <span class="span has-before"></span>
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="pricing-card">
+
+                <h3 class="h3 card-title">Fresh Pages - New Releases</h3>
+
+                <data class="price" value="5">75% Off</data>
+
+                <ul class="pricing-card-list">
+
+                  <li class="card-item">
+                    <p class="card-text">Exchange any recently released or gently used books, less than a year old, at
+                      75% of the original cost (Limited Offer)</p>
+                  </li>
+
+
+                </ul>
+
+                <button class="btn btn-secondary">BUY NOW</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="pricing-card">
+
+                <h3 class="h3 card-title">Timeless Classics - Aged Wonders</h3>
+
+                <data class="price" value="15">50% Off</data>
+
+                <ul class="pricing-card-list">
+
+
+                  <li class="card-item">
+                    <p class="card-text">Swap beloved classics or books aged 1 to 5 years at 50% of the original cost,
+                      preserving the magic of timeless stories.</p>
+                  </li>
+
+                </ul>
+
+                <button class="btn btn-secondary">BUY NOW</button>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="pricing-card">
+
+                <h3 class="h3 card-title">Hidden Treasures - Vintage Editions</h3>
+
+                <data class="price" value="10">25% Off</data>
+
+                <ul class="pricing-card-list">
+
+
+                  <li class="card-item">
+                    <p class="card-text">Dive into the past with vintage editions or books over 5 years old, available
+                      for exchange at 25% of their original cost.</p>
+                  </li>
+
+                </ul>
+
+                <button class="btn btn-secondary">BUY NOW</button>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact" aria-label="contact">
+        <div class="container">
+
+          <p class="section-subtitle">Contact</p>
+
+          <h2 class="h2 section-title has-underline">
+            Write me anything
+            <span clasas="span has-before"></span>
+          </h2>
+
+          <div class="wrapper">
+            <div class="contact-card">
+              <form action="" id="contact-form ">   
+
+              <input type="text" name="name" id="name" placeholder="Your Name" required class="input-field">
+
+              <input type="email" name="email_address" id="email" placeholder="Your Email" required class="input-field">
+
+              <input type="text" name="subject" id="subject" placeholder="Subject" required class="input-field">
+              <div id="subject-count" class="character-count">0/100</div>
+              <!-- Element to display character count for subject -->
+
+              <textarea name="message" id="message" placeholder="Your Message" class="input-field"></textarea>
+              <div id="message-count" class="character-count">0/250</div>
+              <!-- Element to display character count for message -->
+
+              <button type="submit" id="sendMessageBtn" class="btn btn-primary">Send Now</button>
+            </div>
+            <ul class="contact-card ">
+              <li>
+                <p class="card-title">Address:</p>
+                <address class="address">
+                  12, Nayabad <br>
+                  Kolkata, India 700054
+                </address>
+              </li>
+
+              <li>
+                <p class="card-title">Phone:</p>
+                <a href="tel:1234567890" class="card-link">+91 9124421980</a>
+              </li>
+
+              <li>
+                <p class="card-title">Email:</p>
+                <a href="mailto:support@support.com" class="card-link">support@esummit24.com</a>
+              </li>
+
+              <!-- <li>
+                <p class="social-list-title h3">Connect ESummit'24 socials</p>
+
+                <ul class="social-list">
+
+                  <li>
+                    <a href="https://www.facebook.com/" class="social-link">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://twitter.com/?lang=en" class="social-link">
+                      <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.linkedin.com/" class="social-link">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.youtube.com/" class="social-link">
+                      <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                  </li> -->
+
+              <!-- <li>
+                    <a href="tel:+1234567890" class="social-link">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </li> -->
+
+            </ul>
+            </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- --Testimonials -->
+ 
+  <h2 class="h2 section-title has-underline" style="margin-top: 15px;">
+    Testimonials
+    <span class="span has-before"></span>
+  </h2>
+  <p class="section-subtitle">Know what our customers say</p>
+
+<div class="slide-container swiper" style="margin-bottom: 15px;">
+<div class="slide-content">
+<div class="card-wrapper swiper-wrapper">
+    <div class="card swiper-slide">
+        <div class="fronts" style="align-items: center; justify-content: center; display: flex; flex-direction: column; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          
+        <div class="image-content" >
+        
+          
+            <div class="card-image">
+                <img src="assets/images/testimonials-1.jpg" alt="" class="card-img">
+            </div>
+            <h2 style="font-size: 20px;">B.Sharmila</h2>
+        </div>
+        
+        <div class="rating" >
+            <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+        </div>
+        </div>               
+        <div class="backs" style="align-items: center;justify-content: center;display: flex;padding: 10px 10px  ;">
+         
+          ESummit'23 has completely transformed my reading experience! Not only have I discovered new books I never would have picked up otherwise, but I've also connected with fellow book lovers who share my passion. It's like having a personalized library with endless possibilities. Highly recommend! </div>
+          
+    </div>
+    <div class="card swiper-slide">
+        <div class="fronts" style="align-items: center; justify-content: center; display: flex; flex-direction: column; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+          
+          <div class="image-content" >
+                <div class="card-image">
+                    <img src="assets/images/testimonials-2.jpg" alt="" class="card-img">
+                </div>
+                <h2 style="font-size: 20px;">Prem Sampath</h2>
+            </div>
+            <div class="rating" >
+                <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+            </div>
+            </div>
+            <div class="backs" style="align-items: center;justify-content: center;display: flex;padding: 10px 10px  ;">ESummit'23 has transformed my reading habits. Beyond swapping books, it's about fostering a community of passionate readers. I've made friends, broadened my literary horizons, and unearthed hidden gems. Thank you, ESummit'23! </div>
+    </div>
+    <div class="card swiper-slide">
+        <div class="fronts" style="align-items: center; justify-content: center; display: flex; flex-direction: column; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <div class="image-content" >
+                <div class="card-image">
+                    <img src="assets/images/testimonials-3.jpg" alt="" class="card-img">
+                </div>
+                <h2 style="font-size: 20px;">Aron Loes</h2>
+            </div>
+            <div class="rating" >
+                <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+            </div>
+            </div>                   
+            <div class="backs" style="align-items: center;justify-content: center;display: flex;padding: 10px 10px  ;">ESummit'23 is a bookworm's paradise! With its user-friendly interface, welcoming community, and vast variety of books for swapping, I've embarked on countless new literary adventures. It's like an ever-active book club where I've connected with fellow literature lovers. I'm completely hooked!</div>                
+    </div>
+    <div class="card swiper-slide">
+        <div class="fronts" style="align-items: center; justify-content: center; display: flex; flex-direction: column; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+            <div class="image-content" >
+                <div class="card-image">
+                    <img src="assets/images/testimonials-4.jpg" alt="" class="card-img">
+                </div>
+                <h2 style="font-size: 20px;">Sonal K</h2>
+            </div>
+            <div class="rating" >
+                <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+            </div>
+            </div>                   
+            <div class="backs" style="align-items: center;justify-content: center;display: flex;padding: 10px 10px  ;">ESummit'23 revolutionized my reading life! I've decluttered my shelf, discovered hidden gems, and connected with a passionate community. Thank you, ESummit'23, for stealing my heart! </div>
+    </div>
+</div>
+</div>
+<div class="swiper-button-next swiper-navBtn"></div>
+<div class="swiper-button-prev swiper-navBtn"></div>
+<div class="swiper-pagination"></div>
+</div>
+
+
+
+
+<!-- Testimonials -->
+
+  <h1 class="faq" id="faqq">Some Frequently Asked Questions</h1>
+  <div class="faq-section">
+    <div class="faq-container">
+      <div class="question">
+        <h4>How does ESummit'24 work ?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+      <div class="answers">
+        <p>ESummit'24 is a global book exchange platform where users can create profiles,
+          list the books they're willing to swap, and can find other users collections.
+          When you find a book you're interested in, you can find suitable offers and can read that book. It's that
+          easy!</p>
+      </div>
+    </div>
+
+    <div class="faq-container">
+      <div class="question">
+        <h4>How does ESummit'24 contribute to sustainability?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+      <div class="answers">
+        <p>
+          By facilitating book swaps, ESummit'24 promotes a more sustainable reading culture by
+          reducing the demand for new book production. This helps minimize the environmental impact
+          associated with book manufacturing, including paper usage and carbon emissions.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq-container">
+      <div class="question">
+        <h4>How do I join the ESummit'24 community?</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+      <div class="answers">
+        <p>Signing up for ESummit'24 is quick and easy. Simply visit our website, create a profile, and start listing the
+          books you're eager to swap. You'll be joining a vibrant community of passionate readers in no time!</p>
+      </div>
+    </div>
+
+    <div class="faq-container">
+      <div class="question">
+        <h4>How do I ensure the safety and security of my personal information on ESummit'24</h4>
+        <i class="icon fa-solid fa-caret-down"></i>
+      </div>
+      <div class="answers">
+        <p>We take user privacy and security seriously. Your personal information is encrypted and stored securely on
+          our servers. </p>
+      </div>
+    </div>
+  </div>
+  <br /><br />
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+    <div class="foot-top">
+      <div class="foot-left">
+        <div class="desc">
+          <a href="#" class="logo">ESummit'24</a>
+          <p style="text-align: justify;">ESummit'24.com is the ultimate destination for book lovers seeking to swap and
+            discover new literary gems.
+            Connect with fellow enthusiasts, exchange your favorite reads, and embark on exciting new adventures in the
+            world of literature—all on one convenient platform. Join us and dive into a universe of endless
+            possibilities!
+          </p>
+        </div>
+      </div>
+      <div class="foot-middle">
+        <h2>Quick Links</h2>
+        <ul>
+          <li class="foot-quick"><a href="#home">Home</a></li>
+          <li class="foot-quick"><a href="#benefits">Benefits</a></li>
+          <li class="foot-quick"><a href="#chapters">Literary Realms</a></li>
+          <li class="foot-quick"><a href="#pricing">Pricing</a></li>
+          <li class="foot-quick"><a href="#contact">Contact Us</a></li>
+          <li class="foot-quick"><a href="#faqq">Faq</a></li>
+        </ul>
+      </div>
+      <div class="social-icons">
+        <h5>Newsletter</h5>
+        <div class="input-newletter">
+          <input placeholder="Enter your email" type="email" class="in-css"></input>
+          <button class="btn-signup">Subscribe</button>
+        </div>
+        <div class="icons">
+          <a href="https://www.facebook.com/askanuragverma?mibextid=ZbWKwL"><img class="icon-set" src="./assets/images/FB icon.png" alt=""></a>
+          <a href="https://www.instagram.com/anurag.bytes"><img class="icon-set" src="./assets/images/insta icon.png" alt=""></a>
+          <a href="https://www.twitter.com/anuragverma_108"><i class="fa-brands fa-x-twitter fa-2xl" style="color: #deb887;"></i></a>
+          <a href="https://www.youtube.com/@anuragbytes_"><img class="icon-set" src="./assets/images/YT icon.png" alt=""></a>
+        </div>
+      </div>
+
+    </div>
+    <div class="footer-bottom">
+      <p class="copyright" style="text-align: center">
+        &copy;
+        <script>document.write(new Date().getFullYear())</script> All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+  <!-- Footer ended-->
+
+  <!-- <footer class="footer">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <a href="#" class="logo">ESummit'24</a>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#benefits" class="footer-link">Benefits</a>
+          </li>
+
+          <li>
+            <a href="#chapters" class="footer-link">Literary Realms</a>
+          </li>
+
+          <li>
+            <a href="#pricing" class="footer-link">Pricing</a>
+          </li>
+
+
+          <li>
+            <a href="#reviews" class="footer-link">Reviews</a>
+          </li>
+
+          <li>
+            <a href="#contact" class="footer-link">Contact</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2024 All rights reserved. Made with ❤ by Guardian Hackers.
+        </p>
+      </div>
+
+    </div>
+  </footer> -->
+
+
+  <!--Dark Mode-->
+
+  <script>
+
+    // Function to toggle dark mode
+    function toggleDarkMode() {
+      const isDarkMode = isDarkModePreferred();
+      setDarkModePreference(!isDarkMode);
+      applyDarkModePreference();
+    }
+
+    // Function to apply dark mode preference
+    function applyDarkModePreference() {
+      const isDarkMode = isDarkModePreferred();
+      if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        document.getElementById('theme-icon').src = 'assets/images/icons8-sun.svg';
+      } else {
+        document.body.classList.remove('dark-mode');
+        document.getElementById('theme-icon').src = 'assets/images/moon_solid.svg';
+      }
+    }
+
+    // Function to set dark mode preference
+    document.addEventListener('DOMContentLoaded', () => {
+      const currentTheme = localStorage.getItem('theme');
+      const switchCheckbox = document.getElementById('switch'); // Define switchCheckbox here
+
+      if (switchCheckbox) { // Check if switchCheckbox is not null
+        function applyDarkModeStyles() {
+          document.body.classList.remove('light-mode');
+          document.body.classList.add('dark-mode');
+        }
+    
+        function applyLightModeStyles() {
+          document.body.classList.remove('dark-mode');
+          document.body.classList.add('light-mode');
+        }
+    
+        if (currentTheme) {
+          if (currentTheme === 'dark-mode') {
+            applyDarkModeStyles();
+            switchCheckbox.checked = true;
+          } else {
+            applyLightModeStyles();
+          }
+        }
+    
+        switchCheckbox.addEventListener('change', () => {
+          if (switchCheckbox.checked) {
+            applyDarkModeStyles();
+            localStorage.setItem('theme', 'dark-mode');
+          } else {
+            applyLightModeStyles();
+            localStorage.setItem('theme', 'light-mode');
+          }
+        });
+      } else {
+      console.error("Switch checkbox not found!"); // Log an error if switchCheckbox is null
+    }
+  });
+  </script>
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script src="./assets/js/scroll-reveal.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Lenis smooth scrolling -->
+  <script>
+    document.addEventListener("scroll", function () {
+      var scrollPosition = window.scrollY;
+
+      // Get the top position of each section on the page
+      var homeSection = document.getElementById("home").offsetTop;
+      var benefitsSection = document.getElementById("benefits").offsetTop;
+      var chaptersSection = document.getElementById("chapters").offsetTop;
+      var pricingSection = document.getElementById("pricing").offsetTop;
+      var contactSection = document.getElementById("contact").offsetTop;
+
+      // Check which section the user has scrolled to and add the active class accordingly
+      if (scrollPosition < benefitsSection) {
+        setActiveLink("home");
+      } else if (scrollPosition >= benefitsSection && scrollPosition < chaptersSection) {
+        setActiveLink("benefits");
+      } else if (scrollPosition >= chaptersSection && scrollPosition < pricingSection) {
+        setActiveLink("chapters");
+      } else if (scrollPosition >= pricingSection && scrollPosition < contactSection) {
+        setActiveLink("pricing");
+      } else {
+        setActiveLink("contact");
+      }
+    });
+
+    function setActiveLink(sectionId) {
+      // Remove active class from all navbar links
+      var navbarLinks = document.querySelectorAll(".navbar-link");
+      navbarLinks.forEach(function (link) {
+        link.classList.remove("active");
+      });
+
+      // Add active class to the navbar link corresponding to the current section
+      var activeLink = document.querySelector('a[href="#' + sectionId + '"]');
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+    }
+
+    const lenis = new Lenis({
+      duration: 1.8,
+      easing: (t) => (t === 1 ? 1 : 1 - Math.pow(2, -10 * t)),
+      direction: "vertical",
+      gestureDirection: "vertical",
+      smooth: true,
+      smoothTouch: false,
+      touchMultiplier: 2,
+    });
+
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+
+    requestAnimationFrame(raf);
+    // JavaScript function to load more content when user scrolls to bottom
+    function loadMoreContent() {
+      var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      var windowHeight = window.innerHeight;
+      var documentHeight = document.documentElement.scrollHeight;
+
+      // Check if user has scrolled to the bottom of the page
+      if (scrollTop + windowHeight >= documentHeight) {
+        // Make an AJAX request to fetch more content
+        // Replace 'more-content-url' with the actual URL to fetch more content
+        fetch('/index.html')
+          .then(response => response.text())
+          .then(data => {
+            // Append the fetched content to the page
+            document.getElementById('content-container').insertAdjacentHTML('beforeend', data);
+          })
+          .catch(error => console.error('Error fetching more content:', error));
+      }
+    }
+
+    // Event listener to trigger loadMoreContent function when user scrolls
+    window.addEventListener('scroll', loadMoreContent);
+
+
+
+  </script>
+  <script type="module">
+    import { getAuth, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-auth.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyCu2WXknNce_49J5BLuR1DyHm319hu6dWc",
+      authDomain: "login-13127.firebaseapp.com",
+      projectId: "login-13127",
+      storageBucket: "login-13127.appspot.com",
+      messagingSenderId: "151656578300",
+      appId: "1:151656578300:web:c67208ab6ec437c844ab79",
+      measurementId: "G-L3PPD58MZ8",
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth();
+
+    // Check authentication state and update navbar
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        document.getElementById("login-signup-link").style.display = "none";
+        document.getElementById("logout-link").style.display = "block";
+      } else {
+        document.getElementById("login-signup-link").style.display = "block";
+        document.getElementById("logout-link").style.display = "none";
+      }
+    });
+
+    // Logout function
+    document.getElementById("logout").addEventListener("click", (e) => {
+      e.preventDefault();
+      signOut(auth).then(() => {
+        alert("Logged out successfully.");
+      }).catch((error) => {
+        console.error("Logout error:", error);
+      });
+    });
+  </script>
+
+  <script src="vanilla-tilt.js"></script>
+  <script type="text/javascript">
+    (function (d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function () {
+        window.voiceflow.chat.load({
+          verify: { projectID: '66448ea9c63c08981233b8f1' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+
+
+
+  </script>
+  <!-- Swiper JS -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<!-- Custom JavaScript -->
+
+<script src="assets/js/test-script.js"></script>
+</body>
+
+</html>
